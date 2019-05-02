@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import UrlShortener from './views/UrlShortener.vue'
+import Home from './views/Home.vue'
 
 Vue.use(Router)
 
@@ -10,12 +10,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/url-shortener'
-    },
-    {
-      path: '/url-shortener',
-      name: 'url-shortener',
-      component: UrlShortener
+      name: 'home',
+      component: Home
     },
     {
       path: '/about',
