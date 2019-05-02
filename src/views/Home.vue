@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <h2 class="title">短網址服務</h2>
-    <p class="description">在下方輸入框內輸入您預縮短的網址，並按右方的加號，將會產生新的短網址。</p>
+    <p class="description">在下方輸入框內輸入您預縮短的網址，並按右方的加號，將會產生新的短網址。<br>
+      <span class="warning">生成之短網址有效期為一個月，超過一個月會自動刪除。</span>
+    </p>
     <el-input
       placeholder="請輸入您的網址"
       v-model="inputUrl"
@@ -64,6 +66,16 @@ export default {
     max-width: 450px;
     line-height: 1.5;
     text-align: start;
+    .warning {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100%;
+      color: #f44336;
+      padding: 16px;
+      background: #f6f6f6;
+      margin-top: 8px;
+      border-radius: 5px;
+    }
   }
   .input {
     max-width: 450px;
