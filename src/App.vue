@@ -1,28 +1,45 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <h2 class="title">BlackMaple's Website</h2>
+      <router-link to="/url-shortener">短網址</router-link>
+      <router-link to="/about">關於</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  background-color: #2c3e50;
+  color: white;
+  font-size: 18px;
+  .title {
+    margin: 0;
+    padding: 16px;
+    letter-spacing: 2px;
+  }
   a {
+    display: inline-block;
+    color: white;
     font-weight: bold;
-    color: #2c3e50;
+    padding: 8px 24px;
+    text-decoration: none;
     &.router-link-exact-active {
       color: #42b983;
+      border-bottom: #42b983 3px solid;
     }
   }
 }

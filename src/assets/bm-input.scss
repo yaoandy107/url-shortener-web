@@ -1,0 +1,48 @@
+.bm-input {
+  &__inner {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+    &:hover {
+      border-color: #c0c4cc;
+    }
+    &:focus {
+      outline: none;
+      border-color: #409eff;
+    }
+  }
+  &-group {
+    display: inline-table;
+    border-collapse: separate;
+    &__append, &__prepend {
+      background-color: #f5f7fa;
+      color: #909399;
+      vertical-align: middle;
+      display: table-cell;
+      position: relative;
+      border: 1px solid #dcdfe6;
+      border-radius: 4px;
+      padding: 0 20px;
+      width: 1px;
+      white-space: nowrap;
+    }
+    &--prepend .bm-input__inner, &__append {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &--append .bm-input__inner, &__prepend {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
