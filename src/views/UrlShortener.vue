@@ -6,6 +6,7 @@
       placeholder="請輸入您的網址"
       v-model="inputUrl"
       class="input"
+      @keyup.enter="generateShortUrl"
     >
       <el-button
         slot="append"
