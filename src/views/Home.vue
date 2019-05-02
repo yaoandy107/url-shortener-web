@@ -56,6 +56,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 32px;
+  margin-bottom: 32px;
   .title {
     margin: 0;
     &:nth-child(n + 2) {
