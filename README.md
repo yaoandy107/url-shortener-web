@@ -1,4 +1,7 @@
-# shortener-web
+# Url Shortener Frontend
+A frontend for my [url shortener](https://github.com/yaoandy107/url-shortener).
+
+Website link: [https://short.yaoandy107.me/](https://short.yaoandy107.me/)
 
 ## Project setup
 ```
