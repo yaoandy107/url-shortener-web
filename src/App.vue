@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <h2 class="title">BlackMaple's Website</h2>
-      <router-link to="/url-shortener">短網址</router-link>
+      <router-link to="/">短網址</router-link>
       <router-link to="/about">關於</router-link>
     </div>
     <router-view />
