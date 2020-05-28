@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     generateShortUrl () {
-      this.axios.get(`https://wasay.app?url=${this.inputUrl}`).then((response) => {
+      this.axios.get(`https://wasay.cc?url=${this.inputUrl}`).then((response) => {
         this.shortenUrl = response.data
       }).catch((error) => {
         this.shortenUrl = error.response.data.message
